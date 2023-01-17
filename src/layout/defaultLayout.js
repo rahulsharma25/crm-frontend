@@ -6,7 +6,7 @@ import { Header } from './partials/header';
 export const DefaultLayout = (props) => {
   return (
     <div className='default-layout'>
-      <header className='header'>
+      <header className='header mb-3'>
         <Header />
       </header>
 
