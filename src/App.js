@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { DefaultLayout } from './layout/defaultLayout';
+import { Dashboard } from './pages/dashboard/dashboard';
 import { Entry } from './pages/entry/entry';
 
 function App() {
@@ -8,8 +9,7 @@ function App() {
     <div className="App">
       {/* <Entry /> */}
       <DefaultLayout>
-        hi
-        {/* <div>hi</div> */}
+        <Dashboard/>
       </DefaultLayout>
     </div>
   );
