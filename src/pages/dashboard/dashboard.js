@@ -8,7 +8,9 @@ export const Dashboard = () => {
   return (
     <Container>
         <Row>
-            <BreadcrumbComp page='Dashboard' />
+            <Col>
+                <BreadcrumbComp page='Dashboard' />
+            </Col>
         </Row>
         <Row>
             <Col className='mb-2 mt-5 text-center'>
