@@ -12,5 +12,5 @@ export const BreadcrumbComp = ({page}) => {
 };
 
 BreadcrumbComp.propTypes = {
-    page: PropTypes.object.isRequired
+    page: PropTypes.string.isRequired
 };
