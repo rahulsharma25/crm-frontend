@@ -20,6 +20,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "no-empty-function": "off",
         "semi": ["error", "always"],
         "quotes": ["error", "single"]
     }
