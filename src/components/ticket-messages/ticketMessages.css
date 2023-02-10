@@ -1,0 +1,23 @@
+.sender-info {
+  font-size: 10px;
+  font-weight: 600;
+  color: grey;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: grey;
+  width: 15%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message-text {
+  font-size: 16px;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin: 10px;
+}

@@ -3,7 +3,37 @@
         "id": 1,
         "subject": "Dummy subject hi",
         "status": "Client Response Pending",
-        "addedAt": "2023-01-01"
+        "addedAt": "2023-01-01",
+        "history": [
+            {
+                "date": "01-02-2023",
+                "time": "10:23 AM",
+                "message": "Hi, how are you?",
+                "sentBy": "ABC",
+                "senderType": "client"
+            },
+            {
+                "date": "02-02-2023",
+                "time": "11:23 AM",
+                "message": "I am all good. How may I assist you?",
+                "sentBy": "XYZ",
+                "senderType": "operator"
+            },
+            {
+                "date": "03-02-2023",
+                "time": "10:23 AM",
+                "message": "Hi, how are you?",
+                "sentBy": "ABC",
+                "senderType": "client"
+            },
+            {
+                "date": "04-02-2023",
+                "time": "02:23 PM",
+                "message": "I am all good. How may I assist you?",
+                "sentBy": "XYZ",
+                "senderType": "client"
+            }
+        ]
     },
     {
         "id": 2,
