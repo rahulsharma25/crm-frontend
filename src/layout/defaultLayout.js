@@ -1,9 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Outlet } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 import { Footer } from './partials/footer';
 import { Header } from './partials/header';
 
-export const DefaultLayout = (props) => {
+export const DefaultLayout = () => {
   return (
     <div className='default-layout'>
       <header className='header mb-3'>
@@ -11,7 +12,8 @@ export const DefaultLayout = (props) => {
       </header>
 
       <main className='main'>
-        {props.children}
+        <Outlet />
+        {/* {props.children} */}
       </main>
 
       <footer className='footer'>
@@ -21,6 +23,6 @@ export const DefaultLayout = (props) => {
   );
 };
 
-DefaultLayout.propTypes = {
-  children: PropTypes.object.isRequired
-};
+// DefaultLayout.propTypes = {
+//   children: PropTypes.object.isRequired
+// };

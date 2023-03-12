@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
@@ -50,7 +50,7 @@ export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
               />
             </Col>
           </Form.Group>
-          <Button type='submit'>Login</Button>
+          <Button type='submit'>Add Ticket</Button>
         </Form>
       </div>
     </div>
