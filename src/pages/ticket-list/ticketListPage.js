@@ -4,6 +4,7 @@ import { BreadcrumbComp } from '../../components/breadcrumb/breadcrumb';
 import { SearchTicketsComp } from '../../components/search-tickets/searchTicketsComp';
 import { TicketTable } from '../../components/ticket-table/ticketTable';
 import tickets from '../../assets/data/dummy-ticket-data.json';
+import { Link } from 'react-router-dom';
 
 export const TicketListPage = () => {
 
@@ -36,13 +37,15 @@ export const TicketListPage = () => {
       </Row>
       <Row className='mt-3'>
         <Col>
-          <Button>Add New Ticket</Button>
+          <Link to={'/add-ticket'}>
+            <Button>Add New Ticket</Button>
+          </Link>
         </Col>
         <Col>
           <SearchTicketsComp handleOnChange={handleOnChange} searchTxt={searchTxt}/>
         </Col>
       </Row>
-      <Row>
+      <Row className='mt-4'>
         <TicketTable tickets={ticketsToShow} />
       </Row>
     </Container>

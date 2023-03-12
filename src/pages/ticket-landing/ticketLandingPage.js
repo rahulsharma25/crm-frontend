@@ -4,14 +4,21 @@ import { BreadcrumbComp } from '../../components/breadcrumb/breadcrumb';
 import tickets from '../../assets/data/dummy-ticket-data.json';
 import { TicketMessages } from '../../components/ticket-messages/ticketMessages';
 import { TicketReply } from '../../components/ticket-reply/ticketReply';
+import { useParams } from 'react-router-dom';
 
-const ticket = tickets[0];
 export const TicketLandingPage = () => {
-  const [replyMsg, setReplyMsg] = useState('');
+  const {tId} = useParams();
 
+  const [replyMsg, setReplyMsg] = useState('');
+  const [ticket, setTicket] = useState('');
   useEffect(()=>{
-    //empty
-  }, [replyMsg]);
+    for(let i = 0; i < tickets.length; i++) {
+      if (tickets[i].id == tId) {
+        setTicket(tickets[i]);
+        break;
+      }
+    }
+  }, [replyMsg, tId]);
 
   const handleOnChange = (e) => {
     setReplyMsg(e.target.value);
@@ -48,7 +55,7 @@ export const TicketLandingPage = () => {
       </Row>
       <Row>
         <Col>
-          <TicketMessages msgHistory={ticket.history} />
+          {ticket.history && <TicketMessages msgHistory={ticket.history} />}
         </Col>
       </Row>
       <hr />
